@@ -1,0 +1,30 @@
+name: flutter_threat_detector
+description: "Flutter Threat detection plugin to check if the device is jailbroken or not with a lot of other features."
+version: 1.0.0
+license: MIT
+repository: https://github.com/iamnabink/flutter_threat_detector
+issue_tracker: https://github.com/iamnabink/flutter_threat_detector/issues
+homepage: https://nabrajkhadka.com.np
+
+environment:
+  sdk: ^3.6.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.nabrajkhadka.flutter_threat_detector
+        pluginClass: FlutterThreatDetectorPlugin
+      ios:
+        pluginClass: FlutterThreatDetectorPlugin
