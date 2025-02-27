@@ -29,8 +29,8 @@ class _MyAppState extends State<MyApp> {
     bool developerMode;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      jailbroken = await FlutterJailbreakDetection.jailbroken;
-      developerMode = await FlutterJailbreakDetection.developerMode;
+      jailbroken = await FlutterThreatDetector.jailbroken;
+      developerMode = await FlutterThreatDetector.developerMode;
     } on PlatformException {
       jailbroken = true;
       developerMode = true;

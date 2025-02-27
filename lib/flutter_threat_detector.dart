@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class FlutterJailbreakDetection {
+class FlutterThreatDetector {
   static const MethodChannel _channel =
   MethodChannel('FLUTTER_THREAT_DETECTOR');
 
